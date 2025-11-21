@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modélisation</title>
+</head>
+<body>
+    <div id="myDiv"><p>Un peu de text <a href="">et un lien</a></p></div>
+    <div id="menu">
+        <div class="item">
+            <span>Élément 1</span>
+            <span>Élément 2</span>
+        </div>
+        <div class="publicite">
+            <span>Élément 3</span>
+            <span>Élément 4</span>
+        </div>
+    </div>
+    <div id="contenu">
+        <span>Introduction au contenu de la page...</span>
+    </div>
+    <script>
+        var div = document.getElementById('myDiv');
+        var query = document.querySelector('#menu .item span'),
+        queryAll = document.querySelectorAll('#menu .item span');
+
+        // querySelector() : première élément
+        // querySelectorAll() : récupère les éléments sélectionner sous forme de tableaux 
+
+        console.log(div);
+        div.innerHTML = 'Text21';
+        console.log(query.innerHTML);
+        console.log(queryAll.length);
+        console.log(queryAll[0].innerHTML + ' - ' + queryAll[1].innerHTML);
+    </script>
+</body>
+</html>

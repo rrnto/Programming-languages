@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script class="">
+        // Nombre premier
+
+        var nombre = prompt("Entrez un nombre: ");
+        var estPremier = true;
+
+        for(var i=2; i < nombre; i++) {
+            if(nombre % i == 0) {
+                estPremier = false;
+                console.log(nombre + ' est divisible par ' + i);
+                console.log(nombre + ' n\'est pas premier ');
+                break;
+            }
+        }
+
+        if (estPremier) {
+                console.log(nombre + ' est premier');
+            }
+    </script>
+</body>
+</html>
